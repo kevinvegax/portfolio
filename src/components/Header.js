@@ -9,9 +9,9 @@ const Header = () => {
         <a href='#'>
           <img src={Logo} alt=''style={{ maxWidth: '300px'}}/>
         </a>
-        <div className='flex items-right'>
+        <div className='flex items-right gap-x-5'>
           <button className='btn btn-sm'>BLOG</button>
-          <button className='btn btn-sm'>NEWS</button>
+          {/* <button className='btn btn-sm'>NEWS</button> */}
         </div>
       </div>
     </div>
