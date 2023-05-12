@@ -2,7 +2,7 @@ import React from 'react';
 
 import Image from '../assets/avatar.svg'
 
-import {FaGithub, FaYoutube, FaDribbble} from 'react-icons/fa'
+import {FaGithub, FaYoutube, FaLinkedin} from 'react-icons/fa'
 
 import { TypeAnimation } from 'react-type-animation'
 
@@ -17,7 +17,7 @@ const Banner = () => {
         <div className='flex-1 text-center font-secondary lg:text-left'>
           <motion.h1 variants={fadeIn('up', 0.3)} initial="hidden"
           whileInView={'show'} viewport={{once: false, amount: 0.7}}
-           className='text-[55px] font-bold leading-[0.8] lg:text-[110px]'>
+           className='text-[55px] font-bold leading-[1.5] lg:text-[110px]'>
             Kevin Vega
           </motion.h1>
           <motion.div variants={fadeIn('up', 0.4)} initial="hidden"
@@ -28,7 +28,9 @@ const Banner = () => {
             <TypeAnimation sequence={[
               'Developer',
               2000,
-              'Engineer',
+              'Programmer',
+              2000,
+              'Entrepreneur',
               2000,
             ]}
             speed={50}
@@ -36,11 +38,6 @@ const Banner = () => {
             wrapper='span'
             repeat={Infinity}/>
           </motion.div>
-          <motion.p variants={fadeIn('up', 0.5)} initial="hidden"
-          whileInView={'show'} viewport={{once: false, amount: 0.7}}
-          className='mb-8 max-w-lg mx-auto lg:mx-0'>
-            Lorem lorem lorem lorem
-          </motion.p>
           <motion.div variants={fadeIn('up', 0.6)} initial="hidden"
           whileInView={'show'} viewport={{once: false, amount: 0.7}}         
           className='flex max-w-max gap-x-6 items-center mb-12
@@ -57,7 +54,7 @@ const Banner = () => {
                 <FaGithub />
               </a>
               <a href='#'>
-                <FaDribbble />
+                <FaLinkedin />
               </a>
           </motion.div>
         </div>
