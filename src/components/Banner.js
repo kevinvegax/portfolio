@@ -9,6 +9,7 @@ import { TypeAnimation } from 'react-type-animation'
 import { motion } from 'framer-motion'
 // variants
 import { fadeIn } from '../variants'
+import { Link } from 'react-scroll';
 
 const Banner = () => {
   return <section className='min-h-[85vh] lg:min-h-[78vh] flex items-center' id='home'>
@@ -42,20 +43,26 @@ const Banner = () => {
           whileInView={'show'} viewport={{once: false, amount: 0.7}}         
           className='flex max-w-max gap-x-6 items-center mb-12
           mx-auto lg:mx-0'>
+          <Link
+            to='contact'
+            smooth={true}
+          >
             <button className='btn btn-lg'>Contact Me</button>
+          </Link>
           </motion.div>
           <motion.div 
           variants={fadeIn('up', 0.7)} initial="hidden"
-          whileInView={'show'} viewport={{once: false, amount: 0.7}}          className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-              <a href='#'>
-                <FaYoutube />
-              </a>
-              <a href='#'>
-                <FaGithub />
-              </a>
-              <a href='#'>
-                <FaLinkedin />
-              </a>
+          whileInView={'show'} viewport={{once: false, amount: 0.7}}          
+          className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
+            <a href='https://www.youtube.com/@kevinvega2553'>
+              <FaYoutube />
+            </a>
+            <a href='https://github.com/kevinvegadeveloper'>
+              <FaGithub />
+            </a>
+            <a href='https://www.linkedin.com/in/kevinvegax/'>
+              <FaLinkedin />
+            </a>
           </motion.div>
         </div>
         <div className='hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] 

@@ -5,20 +5,24 @@ import { fadeIn } from '../variants'
 
 const services = [
   {
-    name: 'Front-end',
-    description: 'Lorem Lorem lorem lreomddsfd',
+    name: 'Frontend',
+    description: 'Javascript | Typescript | React | Redux | Axios | Tailwind',
   },
   {
-    name: 'Backend-end',
-    description: 'Lorem Lorem lorem lreomddsfd',
+    name: 'Backend',
+    description: 'Nodejs | Express | MongoDB | SQLServer | AWS - EC2',
   },
   {
     name: 'Testing',
-    description: 'Lorem Lorem lorem lreomddsfd',
+    description: 'WDIO | Jasmine | Test Cases | CI/CD',
   },
   {
-    name: 'Soft',
-    description: 'Lorem Lorem lorem lreomddsfd',
+    name: 'Soft Skills',
+    description: 'Motivated | Research | Creativity | Team-building | Decision-making | Friendliness',
+  }, 
+  {
+    name: 'Others',
+    description: 'Advanced English | Git | ERP',
   }
 ]
 

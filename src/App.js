@@ -2,21 +2,44 @@ import React from 'react';
 // components
 import Banner from './components/Banner';
 import Header from './components/Header';
-import Nav from './components/Nav';
 import About from './components/About';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Blog from './pages/Blog';
 
-const App = () => {
-  return (
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: 
     <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
       <Header />
       <Banner />
-      <Nav />
       <About />
       <Skills />
       <Contact />
-    </div>
+    </div>,
+  },
+  {
+    path: "/blog",
+    element: 
+    <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
+      <Blog />
+      <div className='h-[97vh]'></div>
+    </div>,
+  },
+]);
+
+
+const App = () => {
+  return (
+    <>
+    
+      <RouterProvider router={router} />
+    </>
   );
 };
 
