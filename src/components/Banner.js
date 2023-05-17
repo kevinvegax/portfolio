@@ -2,7 +2,7 @@ import React from 'react';
 
 import Image from '../assets/banner.png'
 
-import {FaGithub, FaYoutube, FaLinkedin} from 'react-icons/fa'
+import {FaGithub, FaLinkedin} from 'react-icons/fa'
 
 import { TypeAnimation } from 'react-type-animation'
 
@@ -54,9 +54,6 @@ const Banner = () => {
           variants={fadeIn('up', 0.7)} initial="hidden"
           whileInView={'show'} viewport={{once: false, amount: 0.7}}          
           className='flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0'>
-            <a href='https://www.youtube.com/@kevinvega2553'>
-              <FaYoutube />
-            </a>
             <a href='https://github.com/kevinvegadeveloper'>
               <FaGithub />
             </a>
