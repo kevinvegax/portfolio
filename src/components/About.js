@@ -16,7 +16,7 @@ const About = () => {
         initial="hidden"
         whileInView={'show'}
         viewport={{once: false, amount: 0.3}}
-        className='flex-1 bg-about bg-contain bg-no-repeat h-[640px]
+        className='flex-1 bg-about bg-contain bg-no-repeat h-[440px]
         mix-blend-lighten bg-top'></motion.div>
         <motion.div 
         variants={fadeIn('left', 0.1)}
@@ -26,7 +26,8 @@ const About = () => {
         className='flex-1'>
           <h2 className='h2 text-accent'>About me</h2>
           <h3 className='h3 mb-4'>
-            I'm a Freelancer Front-end Developer
+            I'm Kevin Vega a fullstack developer passionate about creating innovative solutions.
+            I have a degree in mechatronics engineering and I have specialized in software development, acquiring frontend and backend skills
           </h3>
         </motion.div>
       </div>

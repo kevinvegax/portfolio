@@ -7,13 +7,15 @@ const Blog = () => {
       <h1
       className='text-[55px] font-bold leading-[1.5] '
       >If you want to learn and be up to date on new development tools, these articles are for you.</h1>
-      <TypeAnimation sequence={[
-        'Estara disponible pronto',
+      <TypeAnimation 
+      className='text-[45px]'
+      sequence={[
+        'Will be available soon',
         2000,
-        'Estara disponible pronto',
+        'Will be available soon',
         2000,
       ]}
-      speed={50}
+      speed={10}
       wrapper='span'
       repeat={Infinity}/>
     </div>

@@ -36,10 +36,10 @@ const Skills = () => {
         initial="hidden"
         whileInView={'show'}
         viewport={{once: false, amount: 0.3}}
-        className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat
+        className='flex-1 lg:bg-bottom bg-no-repeat
         mix-blend-lighten mb-12 lg:mb-0 '>
           <h2 className='h2 text-accent mb-6'>My Skills</h2>
-          <h3 className='h3 max-w-[455px] mb-16'>I have some experience with Testing and Software Development</h3>
+          <h3 className='h3 max-w-[455px] mb-16'>I'm excited to be part of a team that shares a passion for technology and innovation. I'm always open to learning new skills and exploring new tools to enhance my work. These are some skills I have acquired.</h3>
         </motion.div>
         <motion.div 
         variants={fadeIn('left', 0.1)}
