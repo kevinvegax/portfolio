@@ -5,6 +5,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
+import Work from './components/Work'
 import {
   createBrowserRouter,
   RouterProvider,
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       <Banner />
       <About />
       <Skills />
+      <Work />
       <Contact />
     </div>,
   },
