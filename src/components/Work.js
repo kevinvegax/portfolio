@@ -1,5 +1,4 @@
 import React from 'react'
-
 // motion
 import { motion } from 'framer-motion'
 // variants
@@ -8,7 +7,8 @@ import { fadeIn } from '../variants'
 import Img1 from '../assets/portfolio-img1.png'
 import Img2 from '../assets/portfolio-img2.png'
 import Img3 from '../assets/portfolio-img3.png'
-
+// react-router-dom
+import { Link } from 'react-router-dom'
 const Work = () => {
   return (
     <section className='section' id='work'>
@@ -28,7 +28,7 @@ const Work = () => {
                             These are fullstack projects I built using NodeJs, React, MongoDB, SQL, these projects were deployed in a VPS server using Ubuntu
                         </p>
                     </div>
-                    <div className='group relative overflow-hidden border-2 
+                    <Link to='http://45.90.223.234:3000' className='group relative overflow-hidden border-2 
                     border-white/50 rounded-xl'>
                         <div className='group-hover:bg-black/70 w-full h-full absolute
                         z-40 transition-all duration-300'></div>
@@ -44,7 +44,7 @@ const Work = () => {
                             <span className='text-3xl text-white'>For this project I used React and Redux to control the application state, for the API request I used axios, and the backend was made by Strapi, were I applied concepts such as Authorization,
                                 the Application was deployed in a  VPS Server using ubuntu  </span>
                         </div>
-                    </div>
+                    </Link>
                 </motion.div>
                 {/* <motion.div 
                 variants={fadeIn('left', 0.2)}
